@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatty|Регистрация</title>
+</head>
+<body>
+    <h1>Регистрация</h1>
+    {% if message %}
+    <h3>{{ message }}</h3>
+    {% endif %}
+    <form method="post" action="/register">
+        <input type="email" name="email" placeholder="Введите вашу почту">
+        <input type="text" name="username" placeholder="Введите ваш никнейм">
+        <input type="password" name="password" placeholder="Введите ваш пароль">
+        <input type="password" name="password_repeat" placeholder="Повторите ваш пароль">
+        <button>Зарегистрироваться</button>
+    </form>
+    <a href="http://127.0.0.1:5000/"><<< На главную</a>
+</body>
+</html>
